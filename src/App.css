@@ -1,0 +1,213 @@
+:root {
+  --bg-primary: #000000;
+  --panel-bg: #111113;
+  --panel-border: #27272a;
+  --text-primary: #ffffff;
+  --text-secondary: #8a8a93;
+  --accent: #22c55e;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-3d-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Panel Base (Solid, Not Glass) */
+.glass-panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+}
+
+/* Left Sidebar */
+.left-sidebar {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 16px;
+  z-index: 10;
+}
+
+.sidebar-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 10px;
+}
+
+.sidebar-btn:hover {
+  color: var(--text-primary);
+}
+
+/* Right Sidebar */
+.right-sidebar {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  bottom: 84px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+.right-sidebar::-webkit-scrollbar {
+  width: 0;
+}
+
+.info-card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.status-dot.ready { background-color: var(--accent); }
+
+/* Circular Spinner for Engine Thinking */
+.status-spinner {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgba(34, 197, 94, 0.2);
+  border-top-color: var(--accent);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Typography Hierarchy */
+.info-label {
+  font-size: 10px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.info-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+.info-subtext {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.captured-pieces {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+/* Bottom Bar */
+.bottom-bar {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  z-index: 10;
+}
+
+.bottom-tabs {
+  display: flex;
+  gap: 32px;
+}
+
+.bottom-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.bottom-tab:hover, .bottom-tab.active {
+  color: var(--text-primary);
+}
+
+.bottom-utils {
+  display: flex;
+  gap: 20px;
+}
+
+.util-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.util-btn:hover {
+  color: var(--text-primary);
+}

@@ -1,0 +1,62 @@
+.engine-status {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 250px;
+  padding: 12px;
+  z-index: 50;
+  border-radius: 12px;
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #555;
+  margin-right: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.status-dot.ready {
+  background-color: #4ade80;
+  box-shadow: 0 0 8px #4ade80;
+}
+
+.metrics-grid {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.metric-box {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 6px 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-label {
+  font-size: 10px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 2px;
+}
+
+.metric-value {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.pv-line {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
