@@ -1,6 +1,3 @@
-<div align="center">
-  <img src="docs/screenshots/hero.png" alt="3D Chess Engine Hero Image" width="100%" />
-
   <h1>3D Chess Engine</h1>
   
   <p>A high-performance, web-based 3D chess application featuring an off-thread Stockfish 16.1 AI integration, built with React Three Fiber.</p>
