@@ -6,15 +6,11 @@
   <p>A high-performance, web-based 3D chess application featuring an off-thread Stockfish 16.1 AI integration, built with React Three Fiber.</p>
 
   <p>
-    <a href="https://<YOUR_USERNAME>.github.io/3d-chess-engine"><img src="https://img.shields.io/badge/Live%20Demo-Play%20Now!-brightgreen?style=for-the-badge&logo=vercel" alt="Live Demo" /></a>
-  </p>
-
-  <p>
     <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
     <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=three.js&logoColor=white" alt="Three.js" />
     <img src="https://img.shields.io/badge/Stockfish-111111?style=flat-square&logo=linux&logoColor=white" alt="Stockfish" />
-    <img src="https://img.shields.io/github/license/<YOUR_USERNAME>/3d-chess-engine?style=flat-square" alt="License" />
+    <img src="https://img.shields.io/github/license/samyug/3d-chess-engine?style=flat-square" alt="License" />
   </p>
 </div>
 
