@@ -32,19 +32,6 @@
 
 ---
 
-## 📸 Screenshots
-
-| Gameplay | Engine Analysis |
-| :---: | :---: |
-| <img src="docs/screenshots/gameplay.png" alt="Gameplay" width="400"/> | <img src="docs/screenshots/analysis.png" alt="Analysis" width="400"/> |
-
-| Move Highlights | Mobile Responsive |
-| :---: | :---: |
-| <img src="docs/screenshots/highlights.png" alt="Highlights" width="400"/> | <img src="docs/screenshots/mobile.png" alt="Mobile" width="400"/> |
-
-*(Note: Add screenshot files to the `docs/screenshots/` directory)*
-
----
 
 ## 🏗 System Architecture
 
